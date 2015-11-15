@@ -16,7 +16,7 @@ var Weather = React.createClass({
 
     getDefaultProps() {
         return {
-            lang: 'en',
+            lang:  'en',
             limit: 3
         };
     },
@@ -64,7 +64,7 @@ var Weather = React.createClass({
         };
 
         return {
-            id: format('weather.combined.{city}.{country}.{lang}.{limit}', params),
+            id:     format('weather.combined.{city}.{country}.{lang}.{limit}', params),
             params: params
         };
     },
